@@ -1,0 +1,53 @@
+.railway-map {
+    position: relative;
+    width: 2000px;
+    height: 800px;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+
+  .main-simulation {
+    padding-left: 10%;
+  }
+  
+  .railway-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .track {
+    position: absolute;
+    height: 4px;
+    background: black;
+  }
+  
+  .track.diagonal {
+    transform-origin: left center;
+  }
+  
+  .station {
+    position: absolute;
+    font-size: 14px;
+  }
+  
+  .switch {
+    position: absolute;
+    font-size: 10px;
+    background: yellow;
+    border: 1px solid #333;
+    padding: 2px;
+    border-radius: 3px;
+  }
+  
+  .train {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: red;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.15s linear;
+  }
+  
